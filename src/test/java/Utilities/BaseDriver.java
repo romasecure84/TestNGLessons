@@ -35,7 +35,7 @@ public class BaseDriver {
     }
 
     @AfterClass
-    void finishingOperations(){
+    public void finishingOperations(){
         MyFunctions.WaitFor(5);
         driver.quit();
     }
