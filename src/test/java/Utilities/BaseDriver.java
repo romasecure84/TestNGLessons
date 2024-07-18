@@ -1,7 +1,9 @@
 package Utilities;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -32,6 +34,20 @@ public class BaseDriver {
         Duration dr = Duration.ofSeconds(20);
         driver.manage().timeouts().pageLoadTimeout(dr);
         driver.manage().timeouts().implicitlyWait(dr);
+
+        login();
+    }
+
+    void login(){
+        driver.get("https://opencart.abstracta.us/index.php?route=account/login");
+
+        WebElement email = driver.findElement(By.id("input-email"));
+        email.sendKeys("romasecure55555@gmail.com");
+
+        WebElement password = driver.findElement(By.id("input-password"));
+        password.sendKeys("123456");
+
+        driver.findElement(By.cssSelector("[action] .btn-primary")).click();
     }
 
     @AfterClass
