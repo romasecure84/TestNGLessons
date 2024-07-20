@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="mySuite">
+    <test name="Tes1">
+        <groups>
+            <run>
+                <!--                <include name="SmokeTest"/>-->
+                <exclude name="SmokeTest"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="_12_TestGroups"/>
+            <class name="_13_BeforeGroup"/>
+            <class name="_11_SecondClass"/>
+            <class name="_10_FirstClass"/>
+        </classes>
+    </test>
+</suite>
