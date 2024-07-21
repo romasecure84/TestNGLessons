@@ -3,7 +3,7 @@ import com.github.javafaker.Faker;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
-public class _065_RegistrationExample extends BaseDriver {
+public class _06_RegistrationExample extends BaseDriver {
     @Test
     public void testLogin() {
         driver.get("https://opencart.abstracta.us/index.php?route=account/register");
