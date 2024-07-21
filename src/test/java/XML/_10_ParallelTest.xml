@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="mySuite">
+    <test name="Tes1">
+        <parameter name="items" value="macbook"/>
+        <parameter name="driverType" value=""/>
+        <classes>
+            <class name="Utilities.BaseDriverParameter"/>
+            <class name="_16_SearchItem"/>
+        </classes>
+    </test>
+    <test name="Tes2">
+        <parameter name="items" value="iphone"/>
+        <parameter name="driverType" value="firefox"/>
+        <classes>
+            <class name="Utilities.BaseDriverParameter"/>
+            <class name="_16_SearchItem"/>
+        </classes>
+    </test>
+</suite>

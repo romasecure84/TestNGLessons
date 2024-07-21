@@ -37,8 +37,6 @@ public class BaseDriverParameter {
             case "edge":
                 driver = new EdgeDriver();
                 break;
-            case "chrome":
-                driver = new ChromeDriver();
             default:
                 driver = new ChromeDriver();
         }
