@@ -2,7 +2,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-public class _18_HardAsserSoftAssert {
+public class _19_HardAsserSoftAssert {
     @Test
     public void hardAssert() {
         String message1 = "Hello World";
