@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="mySuite">
+    <test name="wishListTest">
+        <parameter name="item" value="canon"/>
+        <classes>
+            <class name="_25_WishListPOM"/>
+        </classes>
+    </test>
+    <test name="wishListTest2">
+        <parameter name="item" value="imac"/>
+        <classes>
+            <class name="_25_WishListPOM"/>
+        </classes>
+    </test>
+</suite>
